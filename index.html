@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <!-- box icon -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</head>
+<style type="text/css">
+  .dropdown-menu li {
+    position: relative;
+  }
+
+  .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+
+  .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+  }
+
+  .dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+  }
+
+  .hindi {
+    font-family: "Kruti Dev 011";
+    font-size: 18px;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .mer {
+    margin-top: 50px;
+  }
+
+  .hover {
+    background-color: white;
+    transition: 0.5 all ease-in-out;
+  }
+
+  .hover:hover {
+    transform: scale(1.01);
+    overflow: hidden;
+    overscroll-behavior: initial;
+    background-color: rgba(241, 229, 140, 0.917);
+    /* color: white; */
+  }
+
+  .pb {
+    padding-bottom: 250px;
+  }
+
+  .mt {
+    margin-top: -100px;
+  }
+
+  .ml {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .bg-color {
+    background-color: rgb(68, 218, 188);
+  }
+
+  .box2 {
+    top: -400px;
+    left: 50px;
+  }
+  .hover1:hover{
+    background-color: aqua;
+    color: black;
+  }
+  /* hover:hover{
+    background-color: red;
+  } */
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-white">
+    <div class="container-fluid ms-5 ps-5">
+      <a class="navbar-brand ps-5" href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
+
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle me-5" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Certification courses
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Recommended for You</a>
+            <ul class="dropdown-menu dropdown-submenu  ">
+              <li>
+                <a class="dropdown-item" href="#">Web Development</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">React</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Programming with Python </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Machine Learning</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Core Java</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Programming</a>
+            <ul class="dropdown-menu dropdown-submenu">
+              <div class=" ">
+                <li>
+                  <a class="dropdown-item" href="#">Web Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">React</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Programming with Python </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Programming with C and C++</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Android App Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ethical Hacking</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Data Structures & Algorithms</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Clinical Trial Analysis & Reporting</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Blockchain</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">MATLAB</a>
+                </li>
+              </div>
+              <div class=" ">
+                <li>
+                  <a class="dropdown-item" href="#">Software Testing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Cloud computing with AWS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">PLC Programming</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Product Management</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Node JS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">SAS Programming</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Angular</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Robotic Process Automation</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">AR/VR</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Git & GitHub</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Voice App Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">How to Ace Coding Interviews</a>
+                </li>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              Business & Management
+            </a>
+            <ul class="dropdown-menu dropdown-submenu  ">
+              <li>
+                <a class="dropdown-item" href="#">Digital Marketing</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Advanced Excel</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Financial Modeling and Valuation</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Business Analytics 4</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Human Resource Management</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Business Communication Skills</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Stock Market Trading</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Tally</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">SQL for Data Analytics</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Advanced Human Resource Management</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Product Management</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Personal Finance 101</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              Core Engineering
+            </a>
+            <ul class="dropdown-menu dropdown-submenu">
+              <div class=" ">
+                <li>
+                  <a class="dropdown-item" href="#">AutoCAD</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">VLSI Design</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">SOLIDWORKS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">MATLAB</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ansys</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">CATIA</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">STAAD Pro</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">PLC Programming</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Arduino</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">AutoCAD 3D</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Advanced SOLIDWORKS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Fusion 360</a>
+                </li>
+              </div>
+              <div class=" ">
+                <li>
+                  <a class="dropdown-item" href="#">Internet of Things</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Siemens NX</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">3D Printing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Embedded Systems</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">LabVIEW</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Engineering Drawing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Creo Parametric</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">PCB Design</a>
+                </li>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              Data Science
+            </a>
+            <ul class="dropdown-menu dropdown-submenu  ">
+              <li>
+                <a class="dropdown-item" href="#">Machine Learning</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Data Science</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Business Analytics</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Clinical Trial Analysis & Reporting</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">SQL for Data Analytics</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Power BI</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Deep Learning</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Tableau</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> SAS Programming</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Natural Language Processing</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Statistics for Data Science</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              Design
+            </a>
+            <ul class="dropdown-menu dropdown-submenu  ">
+              <li>
+                <a class="dropdown-item" href="#">UI/UX Design</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Graphic Design</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Video Editing</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Animation</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Digital Art</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">WordPress</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Colour Theory for Designers</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Adobe Illustrator</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              Creative Arts
+            </a>
+            <ul class="dropdown-menu dropdown-submenu  ">
+              <li>
+                <a class="dropdown-item" href="#">Creative Writing</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Photography</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Guitar</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Calligraphy</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Acting</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              Language
+            </a>
+            <ul class="dropdown-menu dropdown-submenu  ">
+              <li>
+                <a class="dropdown-item" href="#">French Language</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Spanish Language</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              Career Development
+            </a>
+            <ul class="dropdown-menu dropdown-submenu  ">
+              <li>
+                <a class="dropdown-item" href="#">Business Communication Skills</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Internship & Job Preparation</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">How to Ace Coding Interviews</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Interview Preparation</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Quantitative Aptitude</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="dropdown-item" href="#">Architecture</a>
+            <ul class="dropdown-menu dropdown-submenu  ">
+              <li>
+                <a class="dropdown-item" href="#">AutoCAD</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Revit</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">AutoCAD 3D </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+
+      <div class="dropdown me-5">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item"
+              href="https://trainings.internshala.com/full-stack-web-development-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">Full
+              Stack Development</a></li>
+          <li>
+            <a class="dropdown-item"
+              href="https://trainings.internshala.com/data-science-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">Data
+              Science</a>
+          </li>
+          <li>
+            <a class="dropdown-item"
+              href="https://trainings.internshala.com/human-resource-management-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">Human
+              Resource Management</a>
+          </li>
+          <li>
+            <a class="dropdown-item"
+              href="https://trainings.internshala.com/digital-marketing-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">Digital
+              Marketing</a>
+          </li>
+          <li>
+            <a class="dropdown-item"
+              href="https://trainings.internshala.com/product-management-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">Product
+              Management</a>
+          </li>
+          <li>
+            <a class="dropdown-item"
+              href="https://trainings.internshala.com/ui-ux-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">UI/UX
+              Design</a>
+          </li>
+          <li>
+            <a class="dropdown-item"
+              href="https://trainings.internshala.com/sales-and-business-development-specialization/?tracking_source=trainings-dropdown-placement-guarantee-courses">Sale
+              and Business Development</a>
+          </li>
+        </ul>
+      </div>
+      <div class=""><input type="search" placeholder="search" id="search"></div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="mt-5">
+      <img src="images/2023.jpg" alt="2023 new year images" width="100%">
+    </div>
+    <div class="position-absolute box">
+      <h3 class="text-warning">#NewYear #NewSkill</h3>
+      <h4 class="text-white">Start 2023 by learning an in-demand skill</h4>
+      <p class="text-white">Get FLAT 70% OFF on all online trainings</p>
+      <div class="">
+        <svg height="200" width="500">
+          <polyline points="5,5 25,25 5,50 150,50 150,5" style="fill:yellow;stroke:yellow;stroke-width:5" />
+          <text x="30" y="30" fill="black" style="stroke:black;letter-spacing:1px;">FINAL HOURS!</text>
+        </svg>
+      </div>
+      <!-- <div class="">
+          <div class="text-white clock position-absolute "></div>
+        </div> -->
+    </div>
+  </div>
+
+  <div class="container ps-5 pt-5">
+    <h5 class="d-inline">CERTIFICATION COURSES</h5>&nbsp;&nbsp;&nbsp;
+    <button class="border-0">4-8 weeks</button> <br><br>
+    <h2 class="border border-5 border-bottom-0 border-end-0 border-top-0 border-info">
+      <pre> Fastest way to build your CV</pre>
+    </h2><br><br>
+    <div class="row">
+      <p class="col-3"><box-icon name='check' color='#32ebbe' class="pt-1"></box-icon>Learn at your own schedule</p>
+      <p class="col-2"><box-icon name='check' color='#32ebbe' class="pt-1"></box-icon>Practical learning</p>
+      <p class="col-3"><box-icon name='check' color='#32ebbe' class="pt-1"></box-icon>Industry recognized certificate
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="float-start w-25">
+      <h6 class="ps-5">Categories</h6>
+      <ul class="list-unstyled">
+        <li class="pt-4">Recommended for You</li>
+        <li class="pt-4">Programming</li>
+        <li class="pt-4"> Business & Management</li>
+        <li class="pt-4">Core Engineering</li>
+        <li class="pt-4">Data Science</li>
+        <li class="pt-4">Design</li>
+        <li class="pt-4">Creative Arts</li>
+        <li class="pt-4">Language</li>
+        <li class="pt-4">Career Development</li>
+        <li class="pt-4">Architecture</li>
+        <li class="pt-4">Online courses <span class="hindi">vc fganh esa</span></li>
+      </ul>
+    </div>
+    <div class="float-end w-75">
+      <div class="row pt-5 text-center">
+        <div class="col-4"><img src="images/web-development.jpg" alt="web-development" class="w-100">
+          8 weeks <br>
+          web-development <br>
+          <p class="d-inline"><box-icon name='star' type='solid' color='#f8e90e'></box-icon>4.1</p>
+          <span class="border-0 ms-4">87,584 learning</span>
+          <button class="mt-5 w-100 text-start border-0 bg-gradient">know more</button>
+        </div>
+        <div class="col-4"><img src="images/react.jpg" alt="react" class="w-100">
+          6 weeks <br>
+          React <br>
+          <p class="d-inline"><box-icon name='star' type='solid' color='#f8e90e'></box-icon>4.0</p>
+          <span class="border-0 ms-4">4,150 learning</span>
+          <button class="mt-4 w-100 text-start border-0 bg-gradient">know more</button>
+        </div>
+        <div class="col-4"><img src="images/python.jpg" alt="python" class="w-100">
+          6 weeks <br>
+          Programming with python <br>
+          <p class="d-inline"><box-icon name='star' type='solid' color='#f8e90e'></box-icon>4.2</p>
+          <span class="border-0 ms-4">71,500 learning</span>
+          <button class="mt-4 w-100 text-start border-0 bg-gradient">know more</button>
+        </div>
+      </div>
+      <div class="row pt-5 text-center">
+        <div class="col-4"><img src="images/machine-learning.jpg" alt="machine-learning" class="w-100">
+          6 weeks <br>
+          Machine-learning <br>
+          <p class="d-inline"><box-icon name='star' type='solid' color='#f8e90e'></box-icon>4.5</p>
+          <span class="border-0 ms-4">27,336 learning</span>
+          <button class="mt-5 w-100 text-start border-0 bg-gradient">know more</button>
+        </div>
+        <div class="col-4"><img src="images/java.png" alt="java" class="w-100">
+          6 weeks <br>
+          Core Java <br>
+          <p class="d-inline"><box-icon name='star' type='solid' color='#f8e90e'></box-icon>4.3</p>
+          <span class="border-0 ms-4">22,464 learning</span>
+          <button class="mt-4 w-100 text-start border-0 bg-gradient">know more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+
+  <div class="container-fluid bg-info h-75 mt-5 pb">
+    <div class="container pt-5">
+      <p class="d-inline">PLACEMENT GUARANTEE COURSES</p>&nbsp;&nbsp;&nbsp;<button class="bg-info">3-6 months</button>
+      <h2 class="border border-5 border-bottom-0 border-end-0 border-top-0 border-dark">
+        <pre> Guaranteed way to start your career</pre>
+      </h2>
+      <div class="row">
+        <p class="col-3"><box-icon name='check' color='#000' class="pt-1"></box-icon>Guaranteed placement</p>
+        <p class="col-3"><box-icon name='check' color='#000' class="pt-1"></box-icon>Get 100% refund if not hired</p>
+        <p class="col-3"><box-icon name='check' color='#000' class="pt-1"></box-icon>Become job ready</p>
+      </div>
+      <div class="row  mt-5">
+        <span class="col-3 ms-5 border border-2 border-dark hover rounded rounded-4"><img src="images/full stack web development.png"
+            class="w-100" alt="full-stack-web-development">
+          <h2>full stack development</h2>
+          <button class="bg-info bg-opacity-75 rounded rounded-3">courses with Guaranteed Internship</button><br><br>
+          <p><box-icon name='time-five' class="pt-2"></box-icon>&nbsp; 7 mounth courses</p>
+          <p><box-icon name='rupee' color='#0d0d0d'></box-icon>&nbsp;highest salery of job per months is 1.1 Lac/-</p>
+          <p><box-icon name='shopping-bag' type='solid' color='#f0251c'></box-icon>&nbsp;1.5 lac+ job/internship
+            opportunites</p>
+          <div class="row">
+            <div class="col-6">
+              <p class="mt-4">application closing</p>
+              <h4>15 jan 2023</h4>
+            </div>
+            <div class="col-6 mt-5"><button class="hover1"><a href="#" class="text-black">known more</a></button></div>
+          </div>
+        </span>
+
+        <span class="col-3 ms-5 hover border border-2 border-dark rounded rounded-4"><img src="images/data science.jpg" class="w-100"
+            alt="full-stack-web-development">
+          <h2>Data science</h2>
+          <button class="bg-info bg-opacity-75 rounded rounded-3">courses with Guaranteed Internship</button><br><br>
+          <p><box-icon name='time-five' class="pt-2"></box-icon>&nbsp; 7 mounth courses</p>
+          <p><box-icon name='rupee' color='#0d0d0d'></box-icon>&nbsp;highest salery of job per months is 1.1 Lac/-</p>
+          <p><box-icon name='shopping-bag' type='solid' color='#f0251c'></box-icon>&nbsp;1.5 lac+ job/internship
+            opportunites</p>
+          <div class="row mer">
+            <div class="col-6">
+              <p class="mt-4">application closing</p>
+              <h4>15 jan 2023</h4>
+            </div>
+            <div class="col-6 mt-5"><button class="hover1"><a href="#" class="text-black">known more</a></button></div>
+          </div>
+        </span>
+
+        <span class="col-3 ms-5 hover border border-2 border-dark rounded rounded-4"><img src="images/human resourse management.jpg"
+            class="w-100" alt="full-stack-web-development">
+          <h2>human resourse management </h2>
+          <button class="bg-info bg-opacity-75 rounded rounded-3">courses with Guaranteed Internship</button><br><br>
+          <p><box-icon name='time-five' class="pt-2"></box-icon>&nbsp; 7 mounth courses</p>
+          <p><box-icon name='rupee' color='#0d0d0d'></box-icon>&nbsp;highest salery of job per months is 1.1 Lac/-</p>
+          <p><box-icon name='shopping-bag' type='solid' color='#f0251c'></box-icon>&nbsp;1.5 lac+ job/internship
+            opportunites</p>
+          <div class="row pb-2">
+            <div class="col-6">
+              <p class="mt-1">application closing</p>
+              <h4>15 jan 2023</h4>
+            </div>
+            <div class="col-6 mt-4"><button class="hover1"><a href="#" class="text-black">known more</a></button></div>
+          </div>
+        </span>
+      </div>
+      <div class="row mt-4">
+        <span class="col-3 ms-5 hover border border-2 border-dark rounded rounded-4"><img src="images/digital marketing.webp"
+            class="w-100" alt="full-stack-web-development">
+          <h2>digital marketing </h2>
+          <button class="bg-info bg-opacity-75 rounded rounded-3">courses with Guaranteed Internship</button><br><br>
+          <p><box-icon name='time-five' class="pt-2"></box-icon>&nbsp; 7 mounth courses</p>
+          <p><box-icon name='rupee' color='#0d0d0d'></box-icon>&nbsp;highest salery of job per months is 1.1 Lac/-</p>
+          <p><box-icon name='shopping-bag' type='solid' color='#f0251c'></box-icon>&nbsp;1.5 lac+ job/internship
+            opportunites</p>
+          <div class="row">
+            <div class="col-6">
+              <p class="mt-4">application closing</p>
+              <h4>15 jan 2023</h4>
+            </div>
+            <div class="col-6 mt-5"><button class="hover1"><a href="#" class="text-black">known more</a></button></div>
+          </div>
+        </span>
+
+        <span class="col-3 ms-5 hover border border-2 border-dark rounded rounded-4 "><img src="images/product management.jpg"
+            class="w-100" alt="full-stack-web-development">
+          <h2>product management </h2>
+          <button class="bg-info bg-opacity-75 rounded rounded-3">courses with Guaranteed Internship</button><br><br>
+          <p><box-icon name='time-five' class="pt-2"></box-icon>&nbsp; 7 mounth courses</p>
+          <p><box-icon name='rupee' color='#0d0d0d'></box-icon>&nbsp;highest salery of job per months is 1.1 Lac/-</p>
+          <p><box-icon name='shopping-bag' type='solid' color='#f0251c'></box-icon>&nbsp;1.5 lac+ job/internship
+            opportunites</p>
+          <div class="row mer mt-5">
+            <div class="col-6">
+              <p class="mt-4">application closing</p>
+              <h4>15 jan 2023</h4>
+            </div>
+            <div class="col-6 mt-5"><button class="hover1"><a href="#" class="text-black">known more</a></button></div>
+          </div>
+        </span>
+
+        <span class="col-3 ms-5 hover border border-2 border-dark rounded rounded-4 "><img src="images/ui-ux design.webp" class="w-100"
+            alt="full-stack-web-development">
+          <h2>ui ux design </h2>
+          <button class="bg-info bg-opacity-75 rounded rounded-3">courses with Guaranteed Internship</button><br><br>
+          <p><box-icon name='time-five' class="pt-2"></box-icon>&nbsp; 7 mounth courses</p>
+          <p><box-icon name='rupee' color='#0d0d0d'></box-icon>&nbsp;highest salery of job per months is 1.1 Lac/-</p>
+          <p><box-icon name='shopping-bag' type='solid' color='#f0251c'></box-icon>&nbsp;1.5 lac+ job/internship
+            opportunites</p>
+          <div class="row">
+            <div class="col-6">
+              <p class="mt-4">application closing</p>
+              <h4>15 jan 2023</h4>
+            </div>
+            <div class="col-6 mt-5"><button class="hover1"><a href="#" class="text-black">known more</a></button></div>
+          </div>
+        </span>
+      </div>
+      <div class="row mt-4">
+        <span class="col-3 ms-5 hover border border-2 border-dark rounded rounded-4"><img src="images/Sales-and-Business.jpg"
+            class="w-100" alt="full-stack-web-development">
+          <h2>sales and business </h2>
+          <button class="bg-info bg-opacity-75 rounded rounded-3">courses with Guaranteed Internship</button><br><br>
+          <p><box-icon name='time-five' class="pt-2"></box-icon>&nbsp; 7 mounth courses</p>
+          <p><box-icon name='rupee' color='#0d0d0d'></box-icon>&nbsp;highest salery of job per months is 1.1 Lac/-</p>
+          <p><box-icon name='shopping-bag' type='solid' color='#f0251c'></box-icon>&nbsp;1.5 lac+ job/internship
+            opportunites</p>
+          <div class="row">
+            <div class="col-6">
+              <p class="mt-4">application closing</p>
+              <h4>15 jan 2023</h4>
+            </div>
+            <div class="col-6 mt-5"><button class="hover1"><a href="#" class="text-black">known more</a></button></div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-white mt">
+    <div class="p-5">
+      <div class="border border-5 border-bottom-0 border-end-0 border-top-0 border-info ps-2">
+        <h4>Giving flight to your ambitions</h4>
+      </div>
+      <p class="pt-3">Real success requires the right skillset. Through our online courses, you too can give wings to
+        your dreams.</p>
+      <table>
+        <tr>
+          <td class="ml ps-0 border border-2 border-start-0 border-top-0 border-bottom-0 border-dark">
+            <h3 class="text-bg-info">600K+</h3> Learners
+          </td>
+          <td class="ml border border-2 border-start-0 border-top-0 border-bottom-0 border-dark">
+            <h3 class="text-bg-info">200M+</h3> Learning Minutes
+          </td>
+          <td class="ml border border-2 border-start-0 border-top-0 border-bottom-0 border-dark">
+            <h3 class="text-bg-info">4.5/5</h3> Average rating
+          </td>
+          <td class="ml">
+            <h3 class="text-bg-info">1.3M+</h3> Placements
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="mt-5 mb-5"></div>
+
+  <div class="container bg-color p-5">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-7">
+              <p>I developed an interest in HR Management and came across Internshala Trainings, the courses were
+                affordable with great content. The best part was that they provided me with a lot of practical projects
+                to work on, which landed me my first internship! I'll be forever grateful to Internshala!</p>
+              <p>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+              </p>
+              <h4>Bhakti Karekar</h4>
+              <p>Weligkar Institute of Management</p>
+            </div>
+            <div class="col-5"><img src="images/bhakti_karekar.webp" class="d-block w-50" alt="bhakti_karekar"></div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-7">
+              <p>I took Angular course in 2nd year of my engineering degree. The tutor explained conecepts using proper
+                examples and implementation. After this course, I worked as a full stack developer and I am currently
+                working as a software engineer at Persistent Systems.
+              <p>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+              </p>
+              <h4>Nidhey Indurkar</h4>
+              <p>Anjuman College of Engineering & Technology</p>
+            </div>
+            <div class="col-5"><img src="images/nidhey_indurkar.webp" class="d-block w-50" alt="nidhey_indurkar"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-7">
+              <p>
+                The course helped me get my first Internship at a well-known start-up in just a month and I also got the
+                job before even completing my internship. Courses are well structured, easy to understand, and helped me
+                land my first job. I am thankful to the founder of Internshala, Sarvesh Agarwal, for building such a
+                good platform.
+              <p>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+              </p>
+              <h4>Ravi Joshi</h4>
+              <p>Maharaja Sayajirao University of Baroda</p>
+            </div>
+            <div class="col-5"><img src="images/ravi_joshi.webp" class="d-block w-50" alt="ravi_joshi"></div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="row">
+            <div class="col-7">
+              <p>SAS programming was really useful for my career and it added value to my resume which is one of the
+                reasons why I landed a job in IQVIA company as a Global Data Analyst. The formulas I learnt in the
+                program made me a quick learner in my training sessions at work.
+              <p>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+              </p>
+              <h4>Vijaya Sridhar</h4>
+              <p>VIT UNIVERSITY VELLORE</p>
+            </div>
+            <div class="col-5"><img src="images/vijaya_sridhar.webp" class="d-block w-50" alt="vijaya_sridhar"></div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-7">
+              <p>I learnt skills required to enter into a job. Suraj helped me in framing my resume in such a way that
+                it could highlight my skillset. He also guided me on how to write emails, create LinkedIn profile,
+                approach people, and talk in a professional way. These things really helped me a lot. As I was in
+                teaching profession, I didn't know the industry culture. He guided me best possible way. Thank you so
+                much Suraj and Arjun.
+              <p>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+              </p>
+              <h4>Priti Sonsale</h4>
+              <p>IBM</p>
+            </div>
+            <div class="col-5"><img src="images/priti_sonsale.webp" class="d-block w-50" alt="priti_sonsale"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-7">
+              <p>I graduated in mechanical engineering, and I didn't know what to do next. So, I enrolled in the Digital
+                Marketing Specialization in order to move my career forward. I want to start up my own company in the
+                future and I didn't have any skills at all. With the specialization, I have gained the confidence to
+                kick start something.
+              <p>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+                <box-icon name='star' type='solid' color='#d8ff00'></box-icon>
+              </p>
+              <h4>Karun Das</h4>
+              <p>Razorpod</p>
+            </div>
+            <div class="col-5"><img src="images/karun_das.webp" class="d-block w-50" alt="karun_das"></div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-opacity-25 bg-black" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-opacity-25 bg-black" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="container mt-5 mb-5">
+    <h2>The Internshala Trainings advantage</h2>
+    <p>100% online courses led in a dynamic learning environment</p>
+  </div>
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-3 ms-5 bg-info bg-opacity-10">
+        <img src="images/practical.webp" alt="">
+        <h5>Industry grade content</h5>
+        <p>With practical learning</p>
+      </div>
+      <div class="col-3 ms-5 bg-info bg-opacity-10">
+        <img src="images/placement.webp" alt="">
+        <h5>100% Placement Assistance</h5>
+        <p>To help you launch your career</p>
+      </div>
+      <div class="col-3 ms-5 bg-info bg-opacity-10">
+        <img src="images/certificate.webp" alt="">
+        <h5>Excellence Certified</h5>
+        <p>And recognized by 180K+ companies</p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 mb-5">
+    <!-- <img src="images/happy new year.mp4" alt="" width="100%"
+    height="200px"> -->
+    <video src="images/ad_film.mp4" autoplay controls></video>
+  </div>
+  <div class="container mt-5 mb-5">
+    <h2>Meet your super-skilled educators</h2>
+    <p>Our top-notch instructors have years of experience from companies such as Google, IBM, and McKinsey, and more.
+    </p>
+  </div>
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-2 ms-5 bg-info bg-opacity-10">
+        <img src="images/amitabh_verma.webp" alt="" width="100%">
+        <strong>Amitabh Verma (Ex-Google)</strong>
+        <p>Educator, Digital Marketing</p>
+        <li>Awardee of ‘Top 100 Digital Marketers in India’</li>
+        <li>Ex-ICICI Bank, IIM-K alumnus</li>
+      </div>
+      <div class="col-2 ms-5 bg-info bg-opacity-10">
+        <img src="images/anuj_kalbalia.webp" alt="" width="100%">
+        <strong>Anuj Kalbalia (Ex-IBM)</strong>
+        <p>Educator, Web Development</p>
+        <li>Ex-CodeChef, Internshala</li>
+        <li>NIT Durgapur alumnus</li>
+      </div>
+      <div class="col-2 ms-5 bg-info bg-opacity-10">
+        <img src="images/tripta_singh.webp" alt="" width="100%">
+        <strong>Tripta Singh (Ex-McKinsey)</strong>
+        <p>Educator, Advanced Excel</p>
+        <li>Ex-Director of Content Development, Knowledge Platform</li>
+        <li>LSE Alumna</li>
+      </div>
+      <div class="col-2 ms-5 bg-info bg-opacity-10">
+        <img src="images/kunal_jain.webp" alt="" width="100%">
+        <strong>Kunal Jain (Ex-Capital One)</strong>
+        <p>Educator, Data Science</p>
+        <li>Ex-Aviva, IIT Bombay alumnus</li>
+        <li>Founder of Analytics Vidhya</li>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="mt-5">
+      <img src="images/future.jpg" alt="2023 new year images" width="100%">
+    </div>
+    <div class="position-relative box2">
+      <div class="row">
+        <div class="col-5 me-5">
+          <h3 class="text-black">Kickstart your career with Internshala</h3>
+        </div>
+        <div class="col-5 ms-5">
+          <p class="text-black">We’ll help you with your confusion about career choices, teach you practical skills
+            and help you land a placement. Join a network of 600K+ learners and #KaroShuruaatYahinSe.</p>
+        </div>
+      </div>
+      <button class="bg-primary border rounded-3 p-2 ps-4 pe-4">Certification courses</button>
+      <button class="bg-white border rounded-3 p-2 ps-4 pe-4">Placement Guarantee courses</button>
+    </div>
+  </div>
+  <footer class="container-fluid bg-dark text-white ">
+    <div class="row ps-5 pt-5 ">
+      <div class="col-2 ps-5 pe-5 list-unstyled">
+        <li><strong>Programming</strong></li>
+        <li>Web Development Course</li>
+        <li>Programming with Python Course</li>
+        <li>Programming with C and C++ Course</li>
+        <li>Core Java Course</li>
+        <li>Android App Development Course</li>
+        <li>Ethical Hacking Course</li>
+        <li>React Course</li>
+        <li> Data Structures & Algorithms Course</li>
+        <li>Clinical Trial Analysis & Reporting Course</li>
+        <li>Blockchain Course</li>
+        <li>MATLAB Course</li>
+        <li>Software Testing Course</li>
+        <li>Cloud computing with AWS Course</li>
+        <li>PLC Programming Course</li>
+        <li>Product Management Course</li>
+        <li>Node JS Course</li>
+        <li>SAS Programming Course</li>
+        <li>Angular Course</li>
+        <li>Robotic Process Automation Course</li>
+        <li>AR/VR Course</li>
+        <li>Git & GitHub Course</li>
+        <li>Voice App Development Course</li>
+        <li>How to Ace Coding Interviews Course</li><br><br><br><br><br>
+        <li><strong>Career Development</strong></li>
+        <li>Business Communication Skills Course</li>
+        <li>Internship & Job Preparation Course</li>
+        <li>How to Ace Coding Interviews Course</li>
+        <li>Interview Preparation Course</li>
+        <li>Quantitative Aptitude Course</li>
+      </div>
+      <div class="col-2 ms-5 pe-5 list-unstyled">
+        <li><strong>Business & Management</strong></li>
+        <li>Digital Marketing Course</li>
+        <li>Advanced Excel Course</li>
+        <li>Financial Modeling and Valuation Course</li>
+        <li>Business Analytics Course</li>
+        <li>Human Resource Management Course</li>
+        <li>Business Communication Skills Course</li>
+        <li>Stock Market Trading Course</li>
+        <li>Tally Course</li>
+        <li>SQL for Data Analytics Course</li>
+        <li>Advanced Human Resource Management Course</li>
+        <li>Product Management Course</li>
+        <li>Personal Finance 101 Course</li><br><br><br><br>
+        <li><strong>Design</strong></li>
+        <li>UI/UX Design Course</li>
+        <li>Graphic Design Course</li>
+        <li>Video Editing Course</li>
+        <li>Animation Course</li>
+        <li>Digital Art Course</li>
+        <li>WordPress Course</li>
+        <li>Colour Theory for Designers Course</li>
+        <li>Adobe Illustrator Course</li><br><br><br>
+        <li><strong>Architecture</strong></li>
+        <li>AutoCAD Course</li>
+        <li>Revit Course</li>
+        <li>AutoCAD 3D Course</li>
+
+      </div>
+      <div class="col-2 ms-5 pe-5 list-unstyled">
+        <li><strong>Core Engineering</strong></li>
+        <li>AutoCAD Course</li>
+        <li> VLSI Design Course</li>
+        <li>SOLIDWORKS Course</li>
+        <li>MATLAB Course</li>
+        <li>Ansys Course</li>
+        <li>CATIA Course</li>
+        <li>STAAD Pro Course</li>
+        <li>PLC Programming Course</li>
+        <li>Arduino Course</li>
+        <li>AutoCAD 3D Course</li>
+        <li>Advanced SOLIDWORKS Course</li>
+        <li>Fusion 360 Course</li>
+        <li>Internet of Things Course</li>
+        <li>Siemens NX Course</li>
+        <li>3D Printing Course</li>
+        <li> Embedded Systems Course</li>
+        <li>LabVIEW Course</li>
+        <li>Engineering Drawing Course</li>
+        <li>Creo Parametric Course</li>
+        <li>PCB Design Course</li><br><br><br><br><br>
+        <li><strong>Creative Arts</strong></li>
+        <li>Creative Writing Course</li>
+        <li>Photography Course</li>
+        <li>Guitar Course</li>
+        <li>Calligraphy Course</li>
+        <li>Acting Course</li><br><br><br><br><br><br><br><br>
+        <li><strong>Placement Guarantee courses</strong></li>
+        <li>Full Stack Development</li>
+        <li>Data Science</li>
+        <li>Human Resource Management</li>
+        <li>Digital Marketing</li>
+        <li>Product Management</li>
+        <li>UI/UX Design</li>
+        <li>Sales and Business Development</li>
+      </div>
+      <div class="col-2 ms-5 pe-5 list-unstyled">
+        <li><strong>Data Science</strong></li>
+        <li>Machine Learning Course</li>
+        <li> Data Science Course</li>
+        <li>Business Analytics Course</li>
+        <li>Clinical Trial Analysis & Reporting Course</li>
+        <li>SQL for Data Analytics Course</li>
+        <li>Power BI Course</li>
+        <li>Deep Learning Course</li>
+        <li>Tableau Course</li>
+        <li>SAS Programming Course</li>
+        <li>Natural Language Processing Course</li>
+        <li>Statistics for Data Science Course</li><br><br><br><br><br><br><br>
+        <li><strong>Language</strong></li>
+        <li>Speak English Fluently - I Course</li>
+        <li>French Language Course</li>
+        <li>Spanish Language Course</li>
+      </div>
+    </div>
+    <hr class="mt-5 mb-5">
+    <div class="row pb-5">
+      <div class="col-2 ms-5 pe-5 list-unstyled">
+        <li>Refund Policy</li>
+        <li>IST Scholarship</li>
+        <li>Internshala</li>
+      </div>
+      <div class="col-2 ms-5 pe-5 list-unstyled">
+        <li>Help Center</li>
+        <li>Terms & Conditions</li>
+      </div>
+      <div class="col-2 ms-5 pe-5 list-unstyled">
+        <li>Sitemap</li>
+        <li>Privacy Policy</li>
+      </div>
+      <div class="col-2 ms-5 pe-5 list-unstyled">
+        <li>Blog</li>
+        <li><box-icon name='youtube' type='logo' color="#fff" ></box-icon>&nbsp;&nbsp;<box-icon name='instagram' type='logo' color="#fff" ></box-icon>&nbsp;&nbsp;<box-icon name='linkedin' type='logo' color='#ffffff' ></box-icon></li>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script type="text/javascript">
+    setInterval(printtime, 200)
+    function printtime() {
+      const obj = new Date();
+      const time = obj.getHours() + "h" + " : " + obj.getMinutes() + "m" + " : " + obj.getSeconds() + "s";
+
+      let s = document.getElementsByClassName('clock');
+      s[0].innerHTML = time;
+    }
+    document.getElementsByClassName('clock').innerHTML = "<br><br><br><br>"
+  </script>
+</body>
+
+</html>
